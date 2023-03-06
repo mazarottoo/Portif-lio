@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>DevMazarotto</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+</head>
+<body>
+    <header>
+        <h1>
+            <span>Dev</span>Mazarotto
+        </h1>
+        <span class="material-symbols-outlined" onclick="ClickMenu()" id="menuicon">menu</span>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div id="dhome">
+                <p>
+                    <span id="ola">Olá, eu sou</span>
+                    <br>
+                    <span id="nome">Julio Cesar</span>
+                    <br>
+                    <span id="paragrafo">&nbsp; Tenho 14 anos, estou no ensino médio e sou desenvolvedor web front-end.</span>
+                </p>
+            </div>
+            <span id="redes-home">
+                <a href="https://linkedin.com/">Linkedin</a>
+                <a href="https://github.com/mazarottoo">Github</a>
+            </span>
+        </section>
+        <section id="Habilidades">
+            <h1>Habilidades</h1>
+            <div id="client-size">
+                <h2>Front-End</h2>
+                <p>HTML5, CSS3, JavaScript, VueJS, ReactJS, TailwindCSS, Bootstrap e SASS</p>
+            </div>
+            <div id="server-size">
+                <h2>Back-End</h2>
+                <p>NodeJS, NextJS, Express, MySQL, MongoDB</p>
+            </div>
+            <div id="mobile">
+                <h2>Mobile</h2>
+                <p>ReactNative, Java</p>
+            </div>
+        </section>
+        <section id="projetos">
+            <h1>Projetos</h1>
+            <div id="harrypotter">
+                <img src="#" alt="Imagem Não definida">
+                <h2>Harry Potter</h2>
+                <p>Meu segundo projeto sozinho na área de tecnologia, esse elaborado um mês depois do ínicio dos meus estudos.</p>
+                <div id="linguagem">
+                    <span class="material-symbols-outlined">html</span>
+                    <span class="material-symbols-outlined">css</span>
+                    <span class="material-symbols-outlined">javascript</span>
+                </div>
+                <a href="#">
+                    <span class="material-symbols-outlined">link</span>Visualizar
+                </a>
+            </div>
+            <div id="bot">
+                <img src="#" alt="Imagem não definida">
+                <h2>MazaBot</h2>
+                <p>Projeto desenvolvido como um exemplo de lading page de um bot para p Discord.</p>
+                <div id="linguagem">
+                    <span class="material-symbols-outlined">html</span>
+                    <span class="material-symbols-outlined">css</span>
+                    <span class="material-symbols-outlined">javascript</span>
+                </div>
+                <a href="#">
+                    <span class="material-symbols-outlined">link</span>Visualizar
+                </a>
+            </div>
+        </section>
+        <section id="contato">
+            <h1>Entre em contato</h1>
+            <a href="mazarottoop@gmail.com" rel="noopener norefferrer" target="_self">
+                me@maza.dev
+            </a>
+            <form method="post" autocomplete="on">
+                <div>
+                    <label for=""><input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo"></label>
+                    <label for=""><input type="email" name="e-mail" id="i-email" required autocomplete="email" placeholder="E-mail"></label>
+                    <label for=""><input type="text" required name="mensagem" id="imensagem"></label>
+                    <label for=""><input type="submit" value="enviar" onclick="Contato()"></label>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script>
+        function ClickMenu() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
