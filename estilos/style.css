@@ -84,7 +84,6 @@ header > nav > ul > li > a {
 }
 
 main > section > h1 {
-    padding: 20px 0px;
     color: var(--corprincipal);
 }
 
@@ -131,5 +130,31 @@ main > section#home > div#redes-home > a {
     box-shadow: 0px 0px 10px var(--corprincipal);
 }
 
+/* Configurações HR */
+
+hr {
+    border: solid 1.5px #3e3e3c6b;
+    margin: 30px 0px;
+}
 
 /* Seção Habilidades*/
+
+main > section#habilidades > h1 {
+    margin-bottom: 20px;
+    padding-left: 20px;
+} 
+main > section#habilidades > div {
+    margin: 0px 20px 20px 20px;
+    padding: 5px 10px 10px 10px;
+    min-height: 100px;
+    background-color: #313131;
+}
+
+main > section#habilidades > div > h2 {
+    color: var(--corsecundaria);
+}
+
+main > section#habilidades > div > p {
+    margin-top: 20px;
+    padding-left: 10px;
+}
