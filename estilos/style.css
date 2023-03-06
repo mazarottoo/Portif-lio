@@ -80,6 +80,7 @@ header > nav > ul > li > a {
 }
 
 main > section > h1 {
+    padding: 20px 0px;
     color: var(--corprincipal);
 }
 
@@ -115,6 +116,7 @@ main > section#home > span#redes-home {
 main > section#home > span#redes-home > a {
     margin-right: 23px;
     padding: 5px 10px;
+    font-size: 1.5em;
     font-weight: bolder;
     color: white;
     text-decoration: none;
@@ -123,7 +125,7 @@ main > section#home > span#redes-home > a {
     box-shadow: 0px 0px 10px var(--corprincipal);
 }
 
-/* Celulares MUITO pequenos */
+/* Celulares pequenos */
 @media screen and (max-width: 296px) {
     header > h1 {
         font-size: 1.65em;
