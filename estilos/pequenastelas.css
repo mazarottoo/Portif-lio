@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+:root {
+    --cormodoescuro: #212121;
+    --corfonteescuro: white;
+    --corfonteclaro: black;
+    --cormodoclaro: #ffff;
+
+    --corprincipal: #0FC2C0;
+    --corsecundaria: #008F8C;
+}
+
+
+/* Telas Muito Pequenas */
+
+@media screen and (max-width: 305px) {
+    header {
+        border-bottom: solid 2px var(--corsecundaria);
+    }
+    header > h1 {
+        display: block;
+        text-align: center;
+    }
+
+    header > span#menuicon {
+        display: block;
+        padding: 3px;
+        border-top: 2px solid var(--corsecundaria);
+        background-color: #444444;
+        font-weight: 300;
+        text-align: center;
+        float: none;     
+    }
+
+    header > nav {
+        border-bottom: 2px solid var(--corsecundaria);
+    }
+
+    main > section#home > div#redes-home a {
+        display: block;
+        margin: 20px auto;
+        width: 60vw;
+        text-align: center;
+    }
+    
+}
