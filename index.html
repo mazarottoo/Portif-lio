@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+               <!-- <li><a href="#projetos">Projetos</a></li>-->
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -37,8 +37,8 @@
                 </p>
             </div>
             <div id="redes-home">
-                <a href="https://linkedin.com/">Linkedin</a>
-                <a href="https://github.com/mazarottoo">Github</a>
+                <a href="https://linkedin.com/in/mazarottoo" rel="external" target="_blank">Linkedin</a>
+                <a href="https://github.com/mazarottoo" rel="external" target="_blank">Github</a>
             </div>
         </section>
         <hr>
@@ -58,6 +58,7 @@
                 <p>ReactNative, Java</p>
             </div>
         </section>
+        <hr>
         <section id="projetos">
             <h1>Projetos</h1>
             <div id="harrypotter">
@@ -89,18 +90,21 @@
         </section>
         <section id="contato">
             <h1>Entre em contato</h1>
+            
             <a href="mazarottoop@gmail.com" rel="noopener norefferrer" target="_self">
+                <span class="material-symbols-outlined">mail</span>
                 me@maza.dev
             </a>
             <form method="post" autocomplete="on">
                 <div>
-                    <label for=""><input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo"></label>
-                    <label for=""><input type="email" name="e-mail" id="i-email" required autocomplete="email" placeholder="E-mail"></label>
-                    <label for=""><input type="text" required name="mensagem" id="imensagem"></label>
-                    <label for=""><input type="submit" value="enviar" onclick="Contato()"></label>
+                    <label for="inome"><input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo"></label>
+                    <label for="i-email"><input type="email" name="e-mail" id="i-email" required autocomplete="email" placeholder="E-mail"></label>
+                    <label for="imensagem"><input type="text" required name="mensagem" id="imensagem" placeholder="Sua Mensagem"></label>
+                    <label for="enviar"><input type="submit" id="enviar" value="Enviar" onclick="Contato()"></label>
                 </div>
             </form>
         </section>
+        <hr>
     </main>
     <script>
         function ClickMenu() {
@@ -109,6 +113,10 @@
             } else {
                 menu.style.display = 'none';
             }
+        }
+
+        function Contato() {
+            window.alert('Enviado!')
         }
     </script>
 </body>
